@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Iuris & Ética - Plataforma y Consultor Inteligente de Deontología Jurídica. Resuelve dilemas éticos, faltas disciplinarias y equilibra el derecho con la moral en lenguaje simple.">
+  <title>Iuris & Ética | Plataforma de Deontología Jurídica y Práctica Profesional</title>
+  
+  <!-- Favicon Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Navigation Header
+       ======================================================================== -->
+  <header class="header-nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand-wrapper">
+        <div class="brand-icon">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div class="brand-text">
+          <h1 class="serif-brand">IURIS &amp; ÉTICA</h1>
+          <span class="brand-badge">
+            <span class="badge-pulse"></span>
+            <span data-i18n="badgeSkill">Skill Inteligente Activa</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" data-i18n="navHome">Inicio</a></li>
+          <li><a href="#consultorio" data-i18n="navConsultor">Consultorio Ético</a></li>
+          <li><a href="#simulador" data-i18n="navSimulador">Simulador</a></li>
+          <li><a href="#pilares" data-i18n="navPilares">6 Pilares</a></li>
+          <li><a href="#relaciones" data-i18n="navRelaciones">4 Relaciones</a></li>
+          <li><a href="#sanciones" data-i18n="navSanciones">Sanciones</a></li>
+          <li><a href="#digital" data-i18n="navDigital">IA &amp; Digital</a></li>
+          <li><a href="#glosario" data-i18n="navGlosario">Glosario</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language & Tool Actions -->
+      <div class="nav-actions">
+        <!-- Language Selector -->
+        <div class="lang-selector" aria-label="Selector de idioma">
+          <button type="button" class="lang-btn active" data-lang="es" title="Español">🇪🇸 ES</button>
+          <button type="button" class="lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+          <button type="button" class="lang-btn" data-lang="pt" title="Português">🇧🇷 PT</button>
+        </div>
+
+        <!-- Complexity Mode Switcher (Simple / Technical) -->
+        <button type="button" id="modeToggleBtn" class="mode-toggle-btn" title="Alternar entre Lenguaje Simple y Modo Técnico Jurídico">
+          <i class="fa-solid fa-feather-pointed"></i>
+          <span data-i18n="toggleSimpleMode">Lenguaje Simple</span>
+        </button>
+
+        <!-- Theme Switcher (Dark / Light) -->
+        <button type="button" id="themeToggleBtn" class="theme-toggle-btn" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <div class="hero-pill-badge">
+        <i class="fa-solid fa-heart" style="color: var(--accent-pink);"></i>
+        <span>Derecho · Deontología Jurídica · Inteligencia Artificial ♡</span>
+      </div>
+      
+      <h2 class="hero-title">
+        <span class="text-gradient-femme" data-i18n="heroHeadline">El Equilibrio entre el Derecho y la Ética</span>
+      </h2>
+
+      <div class="hero-quote-box">
+        <p class="hero-quote" data-i18n="heroSubheadline">
+          «La ley se estudia, la ética se ejerce ♡. El derecho te da las herramientas, la ética te dice cómo usarlas ♡.»
+        </p>
+      </div>
+
+      <p class="hero-desc" data-i18n="heroDescription">
+        Plataforma interactiva orientada a resolver dudas, analizar dilemas morales y disciplinarios, y traducir el derecho a un lenguaje transparente, honesto y comprensible para todos.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#consultorio" class="btn btn-primary">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span data-i18n="ctaConsultor">Preguntar a la Skill Ética</span>
+        </a>
+        <a href="#simulador" class="btn btn-secondary">
+          <i class="fa-solid fa-gamepad"></i>
+          <span data-i18n="ctaSimulador">Probar Simulador de Casos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive Ethical & Legal Balance Scale
+       ======================================================================== -->
+  <section class="balance-section">
+    <div class="container">
+      <div class="balance-card-container">
+        <div class="balance-header">
+          <h3 data-i18n="balanceTitle">La Balanza Ético-Jurídica</h3>
+          <p class="text-muted">Observa cómo interactúan las normas de la ley con los imperativos morales de la profesión.</p>
+        </div>
+
+        <div class="balance-controls">
+          <button type="button" class="balance-tab" data-balance="law">
+            <i class="fa-solid fa-book-scale"></i> Ver Enfoque Legal
+          </button>
+          <button type="button" class="balance-tab active" data-balance="equilibrium">
+            <i class="fa-solid fa-scale-balanced"></i> Punto de Equilibrio
+          </button>
+          <button type="button" class="balance-tab" data-balance="ethics">
+            <i class="fa-solid fa-heart-circle-check"></i> Ver Enfoque Ético
+          </button>
+        </div>
+
+        <div id="balanceGrid" class="balance-grid">
+          <!-- Columna Ley -->
+          <div id="scaleLawCol" class="scale-column law">
+            <div class="scale-icon-wrap">
+              <i class="fa-solid fa-gavel"></i>
+            </div>
+            <h4 class="text-gradient-purple" data-i18n="balanceLawTitle">El Derecho (Lo Legal)</h4>
+            <p data-i18n="balanceLawDesc">
+              El marco normativo escrito, las prohibiciones mínimas y las herramientas que la ley autoriza. Es el piso obligatorio del ejercicio profesional.
+            </p>
+            <ul class="scale-bullets">
+              <li><i class="fa-solid fa-check"></i> <span>Leyes escritas y códigos sancionatorios (Ley 1123 de 2007).</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Delimita lo estrictamente prohibido y lo punible.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Brinda los recursos, demandas y defensas procesales.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Se cumple por temor a la sanción de la autoridad.</span></li>
+            </ul>
+          </div>
+
+          <!-- Centro Pivote de la Balanza -->
+          <div class="scale-center-pivot">
+            <div class="pivot-graphic">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h5 class="pivot-title" data-i18n="balanceHarmonizer">Punto de Equilibrio</h5>
+            <p class="pivot-desc" data-i18n="balanceHarmonizerDesc">
+              El abogado no trabaja solo para ganar a toda costa; trabaja para que la sociedad mantenga la fe en la justicia.
+            </p>
+          </div>
+
+          <!-- Columna Ética -->
+          <div id="scaleEthicsCol" class="scale-column ethics">
+            <div class="scale-icon-wrap">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h4 class="text-gradient-pink" data-i18n="balanceEthicsTitle">La Ética (Lo Deontológico)</h4>
+            <p data-i18n="balanceEthicsDesc">
+              Lo que debe hacer un buen abogado cuando nadie lo está vigilando. Es la búsqueda de la justicia, la verdad y la dignidad humana.
+            </p>
+            <ul class="scale-bullets">
+              <li><i class="fa-solid fa-check"></i> <span>Lealtad indeclinable hacia la persona que confía en ti.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Pregunta no solo «¿se puede?», sino «¿es lo correcto?».</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Protección de la dignidad humana y resolución pacífica.</span></li>
+              <li><i class="fa-solid fa-check"></i> <span>Se cumple por convicción interior e integridad profesional.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Módulo 1: Skill Consultorio Ético-Jurídico
+       ======================================================================== -->
+  <section id="consultorio" class="consultor-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-microchip"></i> Motor de Skill Activo
+        </span>
+        <h2>Consultorio y Resolutor de Dilemas Éticos</h2>
+        <p>Escribe tu duda en cualquier idioma o con tus propias palabras. La plataforma analizará la ley, la ética, y te dará una recomendación práctica en lenguaje simple.</p>
+      </div>
+
+      <!-- Search Input Container -->
+      <div class="search-container">
+        <form id="consultorSearchForm">
+          <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="consultorSearchInput" class="search-input" placeholder="Escribe tu duda, caso o dilema (ej: ¿Qué hago si mi cliente me confiesa un delito?)..." autocomplete="off" required>
+            <button type="submit" id="consultorSearchBtn" class="btn btn-primary search-submit-btn">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span data-i18n="searchBtn">Consultar a la Skill</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="quick-topics-label">
+          <i class="fa-solid fa-bolt"></i>
+          <span data-i18n="quickTopicsTitle">O selecciona una necesidad frecuente:</span>
+        </div>
+        
+        <div class="chips-wrapper">
+          <button type="button" class="topic-chip" data-query="¿Qué hago si mi cliente me confiesa en privado que sí cometió el delito?">
+            <i class="fa-solid fa-user-shield"></i> Confesión del Cliente y Secreto
+          </button>
+          <button type="button" class="topic-chip" data-query="¿Puedo usar ChatGPT o Inteligencia Artificial para redactar una demanda?">
+            <i class="fa-solid fa-robot"></i> Uso de IA y Citas Falsas
+          </button>
+          <button type="button" class="topic-chip" data-query="¿Puedo garantizarle al cliente que ganaremos el caso para cobrarle honorarios adelantados?">
+            <i class="fa-solid fa-coins"></i> Honorarios y Promesas de Éxito
+          </button>
+          <button type="button" class="topic-chip" data-query="¿Puedo representar a dos socios comerciales que están en conflicto?">
+            <i class="fa-solid fa-users-slash"></i> Conflicto de Intereses
+          </button>
+          <button type="button" class="topic-chip" data-query="¿Qué pasa si presento certificados médicos falsos para dilatar una audiencia con el juez?">
+            <i class="fa-solid fa-gavel"></i> Trampas y Dilaciones Procesales
+          </button>
+          <button type="button" class="topic-chip" data-query="¿Es legal almacenar expedientes confidenciales en WhatsApp o Google Drive público?">
+            <i class="fa-solid fa-cloud-arrow-up"></i> Ciberseguridad y Nube
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Verdict Display Box -->
+      <div id="verdictBox" class="verdict-box">
+        <div class="verdict-header">
+          <div class="verdict-title-area">
+            <div class="verdict-icon">
+              <i class="fa-solid fa-scale-unbalanced-flip"></i>
+            </div>
+            <div>
+              <h3 id="verdictTopic">Dictamen Ético Deontológico</h3>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.35rem;">
+                <span class="verdict-topic-badge" id="verdictRole">Abogado Litigante</span>
+                <span class="verdict-topic-badge" id="verdictLegalBasis" style="color: var(--accent-purple-light);">Ley 1123 de 2007</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="verdict-actions">
+            <button type="button" id="speakVerdictBtn" class="action-icon-btn" title="Escuchar este dictamen con voz alta">
+              <i class="fa-solid fa-volume-high"></i>
+              <span data-i18n="listenAudio">Escuchar en voz alta</span>
+            </button>
+            <button type="button" id="copyVerdictBtn" class="action-icon-btn" title="Copiar dictamen al portapapeles">
+              <i class="fa-solid fa-copy"></i>
+              <span data-i18n="copyVerdict">Copiar dictamen</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="verdict-grid">
+          <!-- Tarjeta 1: Marco Legal -->
+          <div class="verdict-card law">
+            <div class="verdict-card-label">
+              <i class="fa-solid fa-book-bookmark"></i>
+              <span data-i18n="verdictLaw">¿Qué dice la Ley? (Marco Legal)</span>
+            </div>
+            <p id="verdictLawText"></p>
+          </div>
+
+          <!-- Tarjeta 2: Deontología -->
+          <div class="verdict-card ethics">
+            <div class="verdict-card-label">
+              <i class="fa-solid fa-seedling"></i>
+              <span data-i18n="verdictEthics">¿Qué dice la Ética? (Deontología)</span>
+            </div>
+            <p id="verdictEthicsText"></p>
+          </div>
+
+          <!-- Tarjeta 3: El Equilibrio -->
+          <div class="verdict-card balance full-width">
+            <div class="verdict-card-label">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <span data-i18n="verdictBalance">El Equilibrio Ético-Jurídico</span>
+            </div>
+            <p id="verdictBalanceText"></p>
+          </div>
+
+          <!-- Tarjeta 4: En Palabras Simples -->
+          <div class="verdict-card simple full-width">
+            <div class="verdict-card-label">
+              <i class="fa-solid fa-comment-dots"></i>
+              <span data-i18n="verdictSimple">Explicación en Palabras Simples (Para Todos)</span>
+            </div>
+            <p id="verdictSimpleText" style="font-size: 1.05rem; font-weight: 500;"></p>
+          </div>
+        </div>
+
+        <!-- Recomendación Práctica Paso a Paso -->
+        <div class="verdict-action-steps">
+          <h4><i class="fa-solid fa-list-check"></i> <span data-i18n="verdictAction">Recomendación de Acción Concreta</span></h4>
+          <p id="verdictActionText"></p>
+        </div>
+
+        <!-- Riesgo Sancionatorio -->
+        <div class="verdict-risk-footer">
+          <i class="fa-solid fa-triangle-exclamation" style="font-size: 1.25rem;"></i>
+          <span id="verdictRiskText"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Módulo 2: Simulador Interactivo de Dilemas Éticos
+       ======================================================================== -->
+  <section id="simulador" class="simulador-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-brain"></i> Árbol de Decisiones
+        </span>
+        <h2 data-i18n="simulatorTitle">Simulador Interactivo de Dilemas Éticos</h2>
+        <p data-i18n="simulatorSubtitle">Ponte a prueba frente a casos reales y escenarios de la vida cotidiana. ¿Qué harías tú?</p>
+      </div>
+
+      <div class="simulator-box">
+        <div class="simulator-topbar">
+          <span id="simCaseIndicator" class="case-indicator">Dilema 1 de 5</span>
+          <div id="simScoreBadge" class="score-badge">
+            <i class="fa-solid fa-trophy"></i> <span>0 pts</span>
+          </div>
+        </div>
+
+        <!-- Scenario Description -->
+        <div class="scenario-card">
+          <span id="simSource" class="scenario-source-tag">
+            <i class="fa-solid fa-file-shield"></i> Infografía Oficial
+          </span>
+          <h3 id="simTitle" class="scenario-title">Cargando dilema...</h3>
+          <p id="simText" class="scenario-text"></p>
+        </div>
+
+        <!-- Options Container -->
+        <div id="simOptionsGrid" class="options-grid"></div>
+
+        <!-- Feedback & Disciplinary Result -->
+        <div id="simFeedbackBox" class="feedback-box">
+          <h4 id="simFeedbackHeadline" class="feedback-headline"></h4>
+          <p id="simFeedbackText" class="feedback-text"></p>
+          <div id="simFeedbackSanction" class="feedback-sanction"></div>
+          
+          <div class="simulator-nav-btns">
+            <button type="button" id="simNextBtn" class="btn btn-primary">
+              <span data-i18n="nextCase">Siguiente Dilema</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Módulo 3: Los Seis Pilares de la Profesión
+       ======================================================================== -->
+  <section id="pilares" class="pilares-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-monument"></i> Cimientos Deontológicos
+        </span>
+        <h2 data-i18n="pillarsTitle">Los Seis Pilares que Sostienen la Profesión</h2>
+        <p data-i18n="pillarsSubtitle">Los cimientos morales sobre los que se construye la confianza entre abogado, cliente y sociedad.</p>
+      </div>
+
+      <div id="pillarsGrid" class="pillars-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Módulo 4: Cuatro Relaciones, Cuatro Deberes
+       ======================================================================== -->
+  <section id="relaciones" class="relaciones-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-diagram-project"></i> Ecosistema Jurídico
+        </span>
+        <h2 data-i18n="relationsTitle">Cuatro Relaciones, Cuatro Deberes</h2>
+        <p data-i18n="relationsSubtitle">El abogado en acción frente a todos los actores del ecosistema de justicia.</p>
+      </div>
+
+      <div id="relationsGrid" class="relations-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Módulo 5: Régimen Disciplinario y Escala de Sanciones
+       ======================================================================== -->
+  <section id="sanciones" class="sanciones-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-scale-unbalanced"></i> Ley 1123 de 2007
+        </span>
+        <h2 data-i18n="sanctionsTitle">El Régimen Disciplinario en Colombia</h2>
+        <p id="sanctionsAuthority" class="text-muted" style="margin-top: 0.5rem;"></p>
+      </div>
+
+      <!-- 4 Tiers of Sanctions -->
+      <div id="sanctionsLadder" class="sanctions-ladder"></div>
+
+      <!-- Atenuantes vs Agravantes -->
+      <div class="factors-container">
+        <div class="factor-column mitigating">
+          <h4><i class="fa-solid fa-shield-halved"></i> Criterios Atenuantes</h4>
+          <ul id="mitigatingList" class="factor-list"></ul>
+        </div>
+        <div class="factor-column aggravating">
+          <h4><i class="fa-solid fa-fire-flame-curved"></i> Criterios Agravantes</h4>
+          <ul id="aggravatingList" class="factor-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Módulo 6: Ética en la Era Digital e Inteligencia Artificial
+       ======================================================================== -->
+  <section id="digital" class="digital-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-network-wired"></i> Transformación Tecnológica
+        </span>
+        <h2 data-i18n="digitalTitle">Ética, Inteligencia Artificial y Transformación Digital</h2>
+        <p data-i18n="digitalSubtitle">Bioética algorítmica, ciberseguridad, lealtad digital y uso responsable de IA (Ley 2213 de 2022).</p>
+      </div>
+
+      <div id="digitalGrid" class="digital-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Módulo 7: Glosario Jurídico en Lenguaje Ciudadano
+       ======================================================================== -->
+  <section id="glosario" class="glosario-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-book-open-reader"></i> Diccionario Ciudadano
+        </span>
+        <h2 data-i18n="glossaryTitle">Glosario Jurídico en Lenguaje Ciudadano</h2>
+        <p data-i18n="glossarySubtitle">Términos del derecho explicados con claridad, sin tecnicismos innecesarios.</p>
+      </div>
+
+      <div class="glossary-search-box">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" id="glossarySearchInput" class="glossary-search-input" placeholder="Buscar término (ej. Deontología, Dolo, Temeridad)...">
+      </div>
+
+      <div id="glossaryGrid" class="glossary-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Sección de Documentos Originales Analizados
+       ======================================================================== -->
+  <section class="docs-section">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Fuentes Originales</span>
+        <h3 data-i18n="viewAttachedDocs">Documentos de Referencia Analizados</h3>
+      </div>
+
+      <div class="docs-grid">
+        <a href="Infografía sobre ética profesional del abogado.png" target="_blank" class="doc-card">
+          <div class="doc-icon"><i class="fa-solid fa-image"></i></div>
+          <div class="doc-info">
+            <h5 data-i18n="infographicTitle">Infografía: La Ley se Estudia, la Ética se Ejerce</h5>
+            <span>Imagen PNG Oficial · Principios y Caso Práctico</span>
+          </div>
+        </a>
+
+        <a href="Ética profesional del abogado.pdf" target="_blank" class="doc-card">
+          <div class="doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="doc-info">
+            <h5 data-i18n="pdfTitle">Documento Base: Ética Profesional del Abogado</h5>
+            <span>PDF 5 Páginas · Deontología, Régimen y V Congreso</span>
+          </div>
+        </a>
+
+        <a href="tica_profesional_del_abogado_digital.md" target="_blank" class="doc-card">
+          <div class="doc-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="doc-info">
+            <h5 data-i18n="skillFileTitle">Especificación de la Skill Ética Digital</h5>
+            <span>Markdown · Ley 1123, IA, Ley 2213 & CNDJ</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footerNotice">
+        Desarrollado con fines pedagógicos y de resolución ética. Basado en la normativa colombiana y estándares internacionales de deontología.
+      </p>
+      <p style="margin-top: 0.5rem; opacity: 0.85; color: var(--accent-pink-light);">
+        © 2026 Iuris &amp; Ética · «Una abogacía ética transforma realidades ♡»
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
